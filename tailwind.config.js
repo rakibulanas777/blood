@@ -5,6 +5,9 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  daisyui: {
+    themes: [],
+  },
   theme: {
     extend: {
       backgroundImage: {
@@ -12,7 +15,8 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+     
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
